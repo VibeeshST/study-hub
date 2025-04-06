@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Resources</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #6a0dad;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .main-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 80px 20px 20px;
+      max-width: 1000px;
+      margin: auto;
+      box-sizing: border-box;
+      align-content: center;
+    }
+
+    .nav-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #6a0dad;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .nav-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      background-color: #f0e6fa;
+    }
+
+    @media (max-width: 480px) {
+      .nav-card {
+        font-size: 14px;
+        height: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">Coding Resources</div>
+
+  <div class="main-container">
+    <div class="nav-card" onclick="window.open('https://leetcode.com/problemset/', '_blank')">LeetCode</div>
+    <div class="nav-card" onclick="window.open('https://www.hackerrank.com/', '_blank')">HackerRank</div>
+    <div class="nav-card" onclick="window.open('https://www.hackerearth.com/', '_blank')">HackerEarth</div>
+    <div class="nav-card" onclick="window.open('https://www.codechef.com/', '_blank')">CodeChef</div>
+    <div class="nav-card" onclick="window.open('https://codeforces.com/', '_blank')">Codeforces</div>
+
+    <div class="nav-card" onclick="window.open('https://docs.google.com/spreadsheets/d/1P3RXgZju_2OzZyJaRtu6D3Kx-Eks38X09_zJ8aj2zy8/edit?gid=0#gid=0', '_blank')">Practice Sheet</div>
+    <div class="nav-card" onclick="window.open('https:https://leetcode.com/problem-list/2epudx51/', '_blank')">ProductFit L1</div>
+    <div class="nav-card" onclick="window.open('http://leetcode.com/problem-list/2epbme92/', '_blank')">ProductFit L2</div>
+    <div class="nav-card" onclick="window.open('https://leetcode.com/studyplan/top-interview-150/', '_blank')">LeetCode Top 150</div>
+    <div class="nav-card" onclick="window.open('https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/', '_blank')">Striver A2Z</div>
+    <div class="nav-card" onclick="window.open('https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/', '_blank')">Array GFG</div>
+    <div class="nav-card" onclick="window.open('https://www.geeksforgeeks.org/top-50-string-coding-problems-for-interviews/', '_blank')">String GFG</div>
+
+
+</div>
+
+</body>
+</html>

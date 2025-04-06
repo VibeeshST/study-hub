@@ -1,0 +1,71 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <Style>
+    body{
+        font-family: Arial, sans-serif;
+    }
+     div{
+      background-color: #b438f3;
+      margin: 100px;
+      padding: 50px;
+      color: #333;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+
+    }
+    .login{
+      color: white;
+      text-align: center;
+      height:90px;
+    }
+    input{
+        border: none;
+        border-radius: 10px;
+        margin: 2px;
+        height: 30px;
+    }
+    button{
+        border: none;
+        border-radius: 10px;
+        margin: 2px;
+        height: 30px;
+        padding: 7px;
+        text-align: center;
+        width: 20%;
+
+    }
+    button:hover{
+    background-color: #e0c2ef;
+    height: 32px;
+    width: 22%;
+    }
+   
+
+   
+  </Style>
+</head>
+<body>
+<div class="login"> 
+  <h2>Enter Password:</h2>
+  <input type="password" id="pwd" />
+  <button onclick="check()">Login</button>
+</div>
+  
+  <script>
+    function check() {
+      const correctPassword = "Project001"; // change this to your password
+      const input = document.getElementById("pwd").value;
+
+      if (input === correctPassword) {
+        // Redirect to home page
+        window.location.href = "home.html"; // or "home.html" if that's your file
+      } else {
+        alert("Wrong password!");
+      }
+    }
+  </script>
+</body>
+</html>
